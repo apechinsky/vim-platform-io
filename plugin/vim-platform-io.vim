@@ -55,7 +55,7 @@ endfunction
 " Public: Compile and Deploy the current pde file.
 "
 function! PlatformIoDeploy()
-  call s:PlatformIoCli("platformio run -target upload")
+  call s:PlatformIoCli("platformio run --target upload")
 
   " optionally auto open a serial port
   if g:vim_platform_io_auto_open_serial
